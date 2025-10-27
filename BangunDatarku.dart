@@ -2,14 +2,14 @@ import 'dart:io';
 
 class Persegi {
   void hitungLuas() {
-    print("Masukkan panjang sisi persegi:");
+    stdout.write("Masukkan panjang sisi persegi:");
     double sisi = double.parse(stdin.readLineSync()!);
     double luas = sisi * sisi;
     print("Luas Persegi: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan panjang sisi persegi:");
+    stdout.write("Masukkan panjang sisi persegi:");
     double sisi = double.parse(stdin.readLineSync()!);
     double keliling = 4 * sisi;
     print("Keliling Persegi: $keliling");
@@ -18,18 +18,18 @@ class Persegi {
 
 class PersegiPanjang {
   void hitungLuas() {
-    print("Masukkan panjang persegi panjang:");
+    stdout.write("Masukkan panjang persegi panjang:");
     double panjang = double.parse(stdin.readLineSync()!);
-    print("Masukkan lebar persegi panjang:");
+    stdout.write("Masukkan lebar persegi panjang:");
     double lebar = double.parse(stdin.readLineSync()!);
     double luas = panjang * lebar;
     print("Luas Persegi Panjang: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan panjang persegi panjang:");
+    stdout.write("Masukkan panjang persegi panjang:");
     double panjang = double.parse(stdin.readLineSync()!);
-    print("Masukkan lebar persegi panjang:");
+    stdout.write("Masukkan lebar persegi panjang:");
     double lebar = double.parse(stdin.readLineSync()!);
     double keliling = 2 * (panjang + lebar);
     print("Keliling Persegi Panjang: $keliling");
@@ -38,20 +38,20 @@ class PersegiPanjang {
 
 class Segitiga {
   void hitungLuas() {
-    print("Masukkan alas segitiga:");
+    stdout.write("Masukkan alas segitiga:");
     double alas = double.parse(stdin.readLineSync()!);
-    print("Masukkan tinggi segitiga:");
+    stdout.write("Masukkan tinggi segitiga:");
     double tinggi = double.parse(stdin.readLineSync()!);
     double luas = 0.5 * alas * tinggi;
     print("Luas Segitiga: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan sisi a segitiga:");
+    stdout.write("Masukkan sisi a segitiga:");
     double a = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi b segitiga:");
+    stdout.write("Masukkan sisi b segitiga:");
     double b = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi c segitiga:");
+    stdout.write("Masukkan sisi c segitiga:");
     double c = double.parse(stdin.readLineSync()!);
     double keliling = a + b + c;
     print("Keliling Segitiga: $keliling");
@@ -60,24 +60,24 @@ class Segitiga {
 
 class Trapesium {
   void hitungLuas() {
-    print("Masukkan panjang sisi a trapesium:");
+    stdout.write("Masukkan panjang sisi a trapesium:");
     double a = double.parse(stdin.readLineSync()!);
-    print("Masukkan panjang sisi b trapesium:");
+    stdout.write("Masukkan panjang sisi b trapesium:");
     double b = double.parse(stdin.readLineSync()!);
-    print("Masukkan tinggi trapesium:");
+    stdout.write("Masukkan tinggi trapesium:");
     double tinggi = double.parse(stdin.readLineSync()!);
     double luas = 0.5 * (a + b) * tinggi;
     print("Luas Trapesium: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan sisi a trapesium:");
+    stdout.write("Masukkan sisi a trapesium:");
     double a = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi b trapesium:");
+    stdout.write("Masukkan sisi b trapesium:");
     double b = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi c trapesium:");
+    stdout.write("Masukkan sisi c trapesium:");
     double c = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi d trapesium:");
+    stdout.write("Masukkan sisi d trapesium:");
     double d = double.parse(stdin.readLineSync()!);
     double keliling = a + b + c + d;
     print("Keliling Trapesium: $keliling");
@@ -86,18 +86,18 @@ class Trapesium {
 
 class JajarGenjang {
   void hitungLuas() {
-    print("Masukkan alas jajar genjang:");
+    stdout.write("Masukkan alas jajar genjang:");
     double alas = double.parse(stdin.readLineSync()!);
-    print("Masukkan tinggi jajar genjang:");
+    stdout.write("Masukkan tinggi jajar genjang:");
     double tinggi = double.parse(stdin.readLineSync()!);
     double luas = alas * tinggi;
     print("Luas Jajar Genjang: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan sisi a jajar genjang:");
+    stdout.write("Masukkan sisi a jajar genjang:");
     double a = double.parse(stdin.readLineSync()!);
-    print("Masukkan sisi b jajar genjang:");
+    stdout.write("Masukkan sisi b jajar genjang:");
     double b = double.parse(stdin.readLineSync()!);
     double keliling = 2 * (a + b);
     print("Keliling Jajar Genjang: $keliling");
@@ -106,14 +106,14 @@ class JajarGenjang {
 
 class Lingkaran {
   void hitungLuas() {
-    print("Masukkan jari-jari lingkaran:");
+    stdout.write("Masukkan jari-jari lingkaran:");
     double r = double.parse(stdin.readLineSync()!);
     double luas = 3.14 * r * r;
     print("Luas Lingkaran: $luas");
   }
 
   void hitungKeliling() {
-    print("Masukkan jari-jari lingkaran:");
+    stdout.write("Masukkan jari-jari lingkaran:");
     double r = double.parse(stdin.readLineSync()!);
     double keliling = 2 * 3.14 * r;
     print("Keliling Lingkaran: $keliling");
